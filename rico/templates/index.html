@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Rico</title>
+    <link rel="stylesheet" href={{ url_for('static', filename='style.css' ) }}>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/06e5ccf1ce.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="animated-background">
+        <div class="stack">
+            <div class="item name">Rico</div>
+            <div class="item">
+                <div class="font-weight-900">
+                    Воплощаем идеи в жизнь
+                </div>
+                <div>
+                    Мы занимаемся разработкой и поддержкой программ,
+                    идеи для которых может придумать любой человек.
+                </div>
+            </div>
+        </div>
+        <div class="stack arrow-down">
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="header">
+            <i class="fa-solid fa-rocket"></i>
+            Наши проекты:
+        </div>
+        <div class="stack">
+            {% for project in projects %}
+            <div class="card {% if project.ready %} green-border {% endif %}">
+                <div class="font-weight-700">{{ project.name }}</div>
+                <div>{{ project.description }}</div>
+                <div class="font-weight-100">Автор: {{ project.authors }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="header">
+            <i class="fa-solid fa-phone"></i>
+            Связаться с нами:
+        </div>
+        <div class="stack">
+            <div class="card">
+                <div class="font-weight-700">Ivan Reshetnikov</div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:ordinarydev@protonmail.com" target="_blank">
+                        ordinarydev@protonmail.com
+                    </a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-github"></i>
+                    <a href="https://github.com/ordinary-dev" target="_blank">
+                        ordinary-dev
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div>&copy; Rico, 2022</div>
+    </div>
+</body>
+
+</html>

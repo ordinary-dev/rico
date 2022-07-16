@@ -1,0 +1,12 @@
+- name: Film.io
+  description: Ваш небольшой фотоальбом
+  authors: Иван Р.
+  ready: True
+
+- name: Секретный форум
+  description: Забытое прошлое
+  authors: Милена Р.
+
+- name: Beyond the Void
+  description: To be announced
+  authors: Иван Р.

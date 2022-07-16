@@ -1,0 +1,109 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+}
+
+a {
+    color: inherit;
+}
+
+.animated-background {
+    background: linear-gradient(269deg, #d52e3b, #065968, #6d41f5);
+    background-size: 300% 300%;
+    animation: BackgroundAnimation 60s ease infinite;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+    color: white;
+}
+
+@keyframes BackgroundAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.stack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.item {
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    height: 90vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 799px) {
+    .item {
+        height: 45vh;
+    }
+}
+
+.arrow-down {
+    height: 10vh;
+}
+
+.name {
+    font-size: 128px;
+    font-weight: 900;
+}
+
+.page {
+    padding-top: 100px;
+}
+
+.header {
+    margin-top: 40px;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.green-border {
+    border: 1px solid lightgreen;
+}
+
+.font-weight-900 {
+    font-weight: 900;
+}
+
+.font-weight-700 {
+    font-weight: 700;
+}
+
+.font-weight-100 {
+    font-weight: 100;
+}
+
+.footer {
+    background-color: #333;
+    width: 100%;
+    margin-top: 80px;
+    padding: 30px;
+    box-sizing: border-box;
+    color: #fff;
+}
