@@ -83,6 +83,21 @@ a {
     border-radius: 10px;
 }
 
+.feature {
+    width: 100%;
+    max-width: 160px;
+    padding: 20px;
+    margin: 10px;
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+
+.card-container {
+    width: 100%;
+    max-width: 222px;
+    margin-top: 20px;
+}
+
 .green-border {
     border: 1px solid lightgreen;
 }
@@ -106,4 +121,10 @@ a {
     padding: 30px;
     box-sizing: border-box;
     color: #fff;
+}
+
+.regular-text {
+    max-width: 300px;
+    width: 100%;
+    margin: 20px;
 }
